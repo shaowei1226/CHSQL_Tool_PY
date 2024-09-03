@@ -3,16 +3,16 @@ import subprocess
 from tkinter import scrolledtext, messagebox
 
 def open_script_onetime():
-    subprocess.Popen(['python', 'C:\\Users\\Benson\\Desktop\\BCP_CMD\\Main\\insert_onetime.py'])
+    subprocess.Popen(['python', 'O:\Benson\SQL_Tool\\insert_onetime.py'])
 
 def open_script_D_table_insert():
-    subprocess.Popen(['python', 'C:\\Users\\Benson\\Desktop\\BCP_CMD\\Main\\D_table_insert.py'])
+    subprocess.Popen(['python', 'O:\Benson\SQL_Tool\\D_table_insert.py'])
 
 def open_script_CH_DATE():
-    subprocess.Popen(['python', 'C:\\Users\\Benson\\Desktop\\BCP_CMD\\Main\\CH_DATE.py'])
+    subprocess.Popen(['python', 'O:\Benson\SQL_Tool\\CH_DATE.py'])
     
 def open_script_CH_encode():
-    subprocess.Popen(['python', 'C:\\Users\\Benson\\Desktop\\BCP_CMD\\Main\\change_encode.py'])
+    subprocess.Popen(['python', 'O:\Benson\SQL_Tool\change_encode.py'])
     
 # 創建主窗口
 root = tk.Tk()
