@@ -2,17 +2,27 @@ import tkinter as tk
 import subprocess
 from tkinter import scrolledtext, messagebox
 
+
+script_path = r'\\fs1\Tool\Benson\SQL_Tool'       
+        
 def open_script_onetime():
-    subprocess.Popen(['python', 'O:\Benson\SQL_Tool\\insert_onetime.py'])
+   
+    process = subprocess.Popen(['python', script_path+'\insert_onetime.py'])
 
 def open_script_D_table_insert():
-    subprocess.Popen(['python', 'O:\Benson\SQL_Tool\\D_table_insert.py'])
+    process =  subprocess.Popen(['python', script_path+'\D_table_insert.py'])
 
 def open_script_CH_DATE():
-    subprocess.Popen(['python', 'O:\Benson\SQL_Tool\\CH_DATE.py'])
     
+    process =  subprocess.Popen(['python', script_path+'\CH_DATE.py'])
 def open_script_CH_encode():
-    subprocess.Popen(['python', 'O:\Benson\SQL_Tool\change_encode.py'])
+    process =  subprocess.Popen(['python', script_path+'\change_encode.py'])
+
+def open_script_alter_column():
+    process = subprocess.Popen(['python',   script_path+'\\alter_table.py'])
+
+def open_script_single_insert():
+    process = subprocess.Popen(['python',   script_path+'\single_insert.py'])
     
 # 創建主窗口
 root = tk.Tk()
@@ -35,6 +45,11 @@ button3.pack(pady=10)
 button4 = tk.Button(root, text="轉換編碼_UTF-8", command=open_script_CH_encode)
 button4.pack(pady=10)
 
+button5 = tk.Button(root,text="變更欄位Type",command=open_script_alter_column)
+button5.pack(pady=10)
+
+button6 = tk.Button(root,text="單項插入",command=open_script_single_insert)
+button6.pack(pady=10)
 
 # 啟動主循環
 root.mainloop()
