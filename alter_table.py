@@ -26,12 +26,12 @@ def run_script():
         log_text.insert(tk.END, f"Error: {str(e)}\n")
 
    
-# 初始化Tkinter主窗口
+
 root = tk.Tk()
 root.title("Alter table")
 root.geometry("600x300")
 
-# 创建一个标签和文本框，预填充连接字符串
+
 tk.Label(root, text="Enter Connection String:").pack(pady=5)
 conn_string_entry = tk.Entry(root, width=70)
 conn_string_entry.pack(padx=10, pady=5)
@@ -49,11 +49,11 @@ Type_entry.place(x=10, y=160)
 
 
 
-# 创建一个按钮，点击按钮时执行Python脚本
+
 run_button = tk.Button(root, text="Run Script", command=run_script)
 run_button.place(x=10,y=200)
 
-# 创建一个文本框，显示脚本的日志和输出
+
 log_text = scrolledtext.ScrolledText(root, wrap=tk.WORD, height=15, width=50)
 log_text.place(x=180, y=80)
 

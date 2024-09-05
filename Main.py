@@ -24,15 +24,14 @@ def open_script_alter_column():
 def open_script_single_insert():
     process = subprocess.Popen(['python',   script_path+'\single_insert.py'])
     
-# 創建主窗口
+
 root = tk.Tk()
 root.title("移轉SQL_Tool")
 
-# 設置窗口大小
+
 root.geometry("600x480")
 
 
-# 創建按鈕並綁定到打開指定Python腳本的函數
 button1 = tk.Button(root, text="導入onetime_PostgreSQL", command=open_script_onetime)
 button1.pack(pady=10)
 
@@ -51,5 +50,5 @@ button5.pack(pady=10)
 button6 = tk.Button(root,text="單項插入",command=open_script_single_insert)
 button6.pack(pady=10)
 
-# 啟動主循環
+
 root.mainloop()
