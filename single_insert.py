@@ -6,9 +6,9 @@ from tkinter import scrolledtext, messagebox
 from tkinter.filedialog import askopenfilename
 
 def run_script():
-    conn_string = conn_string_entry.get()  # 获取用户输入的连接字符串
+    conn_string = conn_string_entry.get()  
     if not conn_string:
-        messagebox.showwarning("Warning", "请输入连接字符串")
+        messagebox.showwarning("Warning", "請輸入連接字串")
         return
     
 
@@ -16,7 +16,7 @@ def run_script():
     
     
     if not csv_file_path:
-        print("未选择文件")
+        print("未選擇文件")
         return
 
 
@@ -42,7 +42,7 @@ root.geometry("600x300")
 tk.Label(root, text="Enter Connection String:").pack(pady=5)
 conn_string_entry = tk.Entry(root, width=70)
 conn_string_entry.pack(padx=10, pady=5)
-conn_string_entry.insert(0, "postgresql://postgres:120129@localhost:5432/Romis")  # 预填充文本框
+conn_string_entry.insert(0, "postgresql://postgres:120129@localhost:5432/Romis")  
 
 
 run_button = tk.Button(root, text="Run Script", command=run_script)

@@ -8,7 +8,7 @@ from tkinter.filedialog import askdirectory
 def run_script():
     conn_string = conn_string_entry.get()  
     if not conn_string:
-        messagebox.showwarning("Warning", "请输入連接字串")
+        messagebox.showwarning("Warning", "請輸入連接字串")
         return
     
 

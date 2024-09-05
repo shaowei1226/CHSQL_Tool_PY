@@ -35,7 +35,7 @@ root.geometry("600x300")
 tk.Label(root, text="Enter Connection String:").pack(pady=5)
 conn_string_entry = tk.Entry(root, width=70)
 conn_string_entry.pack(padx=10, pady=5)
-conn_string_entry.insert(0, "postgresql://postgres:120129@localhost:5432/Romis")  # 预填充文本框
+conn_string_entry.insert(0, "postgresql://postgres:120129@localhost:5432/Romis")  
 
 tk.Label(root,text="Table").place(x=10,y=60)
 table_entry = tk.Entry(root, width=20)

@@ -9,7 +9,7 @@ import subprocess
 def run_script():
     conn_string = conn_string_entry.get()  
     if not conn_string:
-        messagebox.showwarning("Warning", "请输入连接字符串")
+        messagebox.showwarning("Warning", "請輸入連接字串")
         return
     
     
@@ -17,7 +17,7 @@ def run_script():
     
   
     if not csv_directory:
-        print("未选择目錄")
+        print("未選擇目錄")
         return
 
     imported_tables_file = os.path.join(csv_directory, 'imported_tables.txt')

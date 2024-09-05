@@ -11,7 +11,7 @@ csv_directory = askdirectory(title='請選擇指定目錄')
     
   
 if not csv_directory:
-    print("未选择目錄")
+    print("未選擇目錄")
     
     
 LOG_FILE = 'processed_log.txt'
